@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-4">
+  <div class="text-center mb-5">
+    <h1 class="display-4">Mission Planner Dashboard</h1>
+    <p class="lead text-muted">Welcome to the mission coordination system. Manage missions, roles, equipment, and locations from one central place.</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <div class="col">
+      <div class="card border-primary h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Missions</h5>
+          <p class="card-text">View, create, and manage mission tasks and assignments.</p>
+          <a href="/missions" class="btn btn-primary">Go to Missions</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card border-success h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Locations</h5>
+          <p class="card-text">Maintain strategic mission locations and coordinates.</p>
+          <a href="/locations" class="btn btn-success">Go to Locations</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-warning h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Roles</h5>
+          <p class="card-text">Assign roles and personnel to mission units.</p>
+          <a href="/roles" class="btn btn-warning text-white">Go to Roles</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-info h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Equipment</h5>
+          <p class="card-text">Manage mission-critical equipment and assignments.</p>
+          <a href="/equipment" class="btn btn-info text-white">Go to Equipment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
