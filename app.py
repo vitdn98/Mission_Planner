@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.config["DB_CONFIG"] = {
     "dbname": "mission_planner",
     "user": "postgres",
-    "password": "Yooli",
+    "password": "",
     "host": "localhost",
     "port": "5432",
 }
